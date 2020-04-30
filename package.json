@@ -7,8 +7,8 @@
     "build": "tsc",
     "watch": "tsc --watch"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["https://github.com/crossplatformsweden/gdpr-filter"],
+  "author": "Emil Apelgren",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "ISC",
