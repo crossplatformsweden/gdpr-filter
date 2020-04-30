@@ -1,21 +1,25 @@
 
-// ESLINT TODOS
 const removeKey = (object: any, searchString: string) => {
-  // eslint-disable-next-line no-restricted-syntax
-  for (const prop in object) {
-    if (prop.includes(searchString)) {
-      // eslint-disable-next-line no-param-reassign
-      delete object[prop];
-    } else if (typeof object[prop] === 'object') removeKey(object[prop], searchString);
+    for(let prop in object) {
+      //console.log(prop)
+      if (prop.includes(searchString)) {
+        delete object[prop];
+      }
+      else if (typeof object[prop] === 'object')
+        removeKey(object[prop], searchString);
+    }
   }
-};
 
+<<<<<<< HEAD
 const list = ['pass', 'code', 'ssn', 'social', 'birth', 'fodelse', 'födelse', 'person', 'pnr', "phone", "mail"];
+=======
+const list = ["pass", "code", "ssn", "social","birth", "fodelse", "födelse", "person", "pnr"]
+>>>>>>> parent of cf72653... added lint
 
-// eslint-disable-next-line import/prefer-default-export
 export const filter = (object: any) => {
-  list.forEach((c) => removeKey(object, c));
-  return {
-    ...object,
-  };
-};
+    list.forEach(c => removeKey(object, c))
+    console.log(object)
+    return {
+        ...object
+    }
+}
