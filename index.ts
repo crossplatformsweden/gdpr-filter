@@ -10,11 +10,7 @@ const removeKey = (object: any, searchString: string) => {
     }
   }
 
-<<<<<<< HEAD
-const list = ['pass', 'code', 'ssn', 'social', 'birth', 'fodelse', 'födelse', 'person', 'pnr', "phone", "mail"];
-=======
 const list = ["pass", "code", "ssn", "social","birth", "fodelse", "födelse", "person", "pnr"]
->>>>>>> parent of cf72653... added lint
 
 export const filter = (object: any) => {
     list.forEach(c => removeKey(object, c))
