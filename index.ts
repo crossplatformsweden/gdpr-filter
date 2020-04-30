@@ -10,7 +10,7 @@ const removeKey = (object: any, searchString: string) => {
   }
 };
 
-const list = ['pass', 'code', 'ssn', 'social', 'birth', 'fodelse', 'födelse', 'person', 'pnr'];
+const list = ['pass', 'code', 'ssn', 'social', 'birth', 'fodelse', 'födelse', 'person', 'pnr', "phone", "mail"];
 
 // eslint-disable-next-line import/prefer-default-export
 export const filter = (object: any) => {
