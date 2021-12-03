@@ -12,8 +12,9 @@ const removeKey = (object: any, searchString: string) => {
 const list = ["pass", "code", "ssn", "social", "birth", "fodelse", "födelse", "person", "pnr", "phone", "email"]
 
 export const gdprfilter = (object: any) => {
-  list.forEach(c => removeKey(object, c))
+  const copy = Object.assign({}, object);
+  list.forEach(c => removeKey(copy, c))
   return {
-    ...object
+    ...copy
   }
 }

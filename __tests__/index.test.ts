@@ -1,5 +1,5 @@
 
-import { filter } from '..'
+import { gdprfilter } from '..'
 
 describe('filter', () => {
     it('should remove properties', () => {
@@ -12,7 +12,7 @@ describe('filter', () => {
                 b: ""
             }
         }
-        const filtered = filter(obj)
+        const filtered = gdprfilter(obj)
 
         expect(filtered).toEqual({
             a: "1",
