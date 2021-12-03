@@ -20,6 +20,7 @@ describe('filter', () => {
                 b: ""
             }
         })
-
+        expect(filtered).not.toEqual(obj)
+        expect(obj.ssn).toEqual("2")
     });
 });
