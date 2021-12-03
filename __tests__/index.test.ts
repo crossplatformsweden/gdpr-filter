@@ -22,5 +22,6 @@ describe('filter', () => {
         })
         expect(filtered).not.toEqual(obj)
         expect(obj.ssn).toEqual("2")
+        expect(filtered.ssn).not.toEqual("2")
     });
 });
