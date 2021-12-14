@@ -1,6 +1,6 @@
 {
   "name": "gdpr-filter",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "gprd object filter",
   "scripts": {
     "test": "jest",
