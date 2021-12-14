@@ -7,6 +7,7 @@ describe('filter', () => {
             a: "1",
             ssn: "2",
             personummer: "3",
+            personum: "3",
             nested: {
                 code: "",
                 b: ""
